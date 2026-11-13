@@ -1,11 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Millennium Renovation LLC | Admin</title>
-</head>
-<body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-</body>
-</html>
+backend:
+  name: github
+  repo: millenniumrenovation19/millennium-renovation-website
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Website Pages"
+    files:
+      - label: "Company Information"
+        name: "company"
+        file: "content/company.json"
+        format: "json"
+        fields:
+          - {label: "Company Name", name: "name", widget: "string"}
+          - {label: "Phone Number", name: "phone", widget: "string"}
+          - {label: "Email Address", name: "email", widget: "string"}
+          - {label: "About Our Company", name: "about", widget: "text"}
+          - {label: "Homepage Photo", name: "hero_image", widget: "image", required: false}
