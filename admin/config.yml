@@ -20,3 +20,14 @@ collections:
           - {label: "Email Address", name: "email", widget: "string"}
           - {label: "About Our Company", name: "about", widget: "text"}
           - {label: "Homepage Photo", name: "hero_image", widget: "image", required: false}
+
+  - name: "projects"
+    label: "Our Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Project Name", name: "title", widget: "string"}
+      - {label: "Project Description", name: "description", widget: "text"}
+      - {label: "Project Photo", name: "image", widget: "image"}
+      - {label: "Project Category", name: "category", widget: "select", options: ["Flooring", "Painting", "Kitchen Remodeling", "Bathroom Remodeling", "Commercial Renovation", "Other"]}
