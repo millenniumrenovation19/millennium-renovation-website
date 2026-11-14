@@ -22,7 +22,7 @@ collections:
           - {label: "Homepage Photo", name: "hero_image", widget: "image", required: false}
 
   - name: "projects"
-    label: "Our Projects"
+    label: "Projects"
     folder: "content/projects"
     create: true
     slug: "{{slug}}"
