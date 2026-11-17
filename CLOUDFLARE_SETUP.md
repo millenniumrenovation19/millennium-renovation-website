@@ -7,7 +7,7 @@
 - Output directory: / (repository root)
 - No environment variables required.
 
-Before domain cutover, deploy this branch and test all images, videos, navigation and forms. Activate FormSubmit for millenniumrenovation19@gmail.com and verify email delivery. Existing Netlify form submissions do not migrate automatically.
+Before domain cutover, deploy this branch and test all images, videos, navigation and forms. Activate FormSubmit for contact@millenniumrenovationllc.com and verify email delivery. Existing Netlify form submissions do not migrate automatically.
 
 Keep the domain registration and existing email service. Preserve all DNS records, including Microsoft email MX, SPF, DKIM, autodiscover and verification records. Public DNS queries are not a complete zone export; obtain the authoritative zone from the current provider before nameserver changes.
 
